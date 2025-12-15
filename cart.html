@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עגלת קניות - דוקטור ג'חנון</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="דוקטור ג'חנון" class="logo-img">
+                <span>דוקטור ג'חנון</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">בית</a></li>
+                <li><a href="menu.html">תפריט</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+            <a href="cart.html" class="cart-btn active">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Cart Header -->
+    <section class="page-header">
+        <h1>עגלת הקניות</h1>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <!-- Empty Cart Message -->
+            <div class="empty-cart" id="empty-cart">
+                <span class="empty-cart-icon">🛒</span>
+                <h2>העגלה ריקה</h2>
+                <p>עדיין לא הוספת מוצרים לעגלה</p>
+                <a href="menu.html" class="btn btn-primary">לתפריט</a>
+            </div>
+
+            <!-- Cart with Items -->
+            <div class="cart-content" id="cart-content" style="display: none;">
+                <div class="cart-items" id="cart-items">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <div class="cart-summary">
+                    <h3>סיכום הזמנה</h3>
+                    <div class="summary-row">
+                        <span>סה"כ מוצרים:</span>
+                        <span id="subtotal">₪0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>משלוח:</span>
+                        <span id="delivery-fee">יחושב בהמשך</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>סה"כ לתשלום:</span>
+                        <span id="total">₪0</span>
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary btn-block">להמשך לתשלום</a>
+                    <a href="menu.html" class="btn btn-secondary btn-block">להוסיף עוד מוצרים</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>דוקטור ג'חנון</h4>
+                    <p>הג'חנון הכי טעים בארץ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="menu.html">תפריט</a></li>
+                        <li><a href="gallery.html">גלריה</a></li>
+                        <li><a href="contact.html">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>צור קשר</h4>
+                    <p>📱 0522212410</p>
+                    <a href="https://www.instagram.com/doctorjachnun" target="_blank">📸 @doctorjachnun</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 דוקטור ג'חנון. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

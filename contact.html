@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר - דוקטור ג'חנון</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="דוקטור ג'חנון" class="logo-img">
+                <span>דוקטור ג'חנון</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">בית</a></li>
+                <li><a href="menu.html">תפריט</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="contact.html" class="active">צור קשר</a></li>
+            </ul>
+            <a href="cart.html" class="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <h1>צור קשר</h1>
+        <p>נשמח לעמוד לשירותכם</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>דרכי התקשרות</h2>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <h4>וואטסאפ</h4>
+                            <p>0522212410</p>
+                            <a href="https://wa.me/972522212410" target="_blank" class="btn btn-whatsapp">
+                                שלח הודעה
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">📸</span>
+                        <div>
+                            <h4>אינסטגרם</h4>
+                            <p>@doctorjachnun</p>
+                            <a href="https://www.instagram.com/doctorjachnun" target="_blank" class="btn btn-instagram">
+                                עקבו אחרינו
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>שעות פעילות</h4>
+                            <p>שישי-שבת: 07:00-14:00</p>
+                            <p>ימי חול: בתיאום מראש</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delivery Zones Info -->
+                <div class="delivery-info">
+                    <h2>אזורי משלוח</h2>
+
+                    <div class="zone-card">
+                        <div class="zone-header">
+                            <span class="zone-name">אזור מרכז</span>
+                            <span class="zone-price">₪20</span>
+                        </div>
+                        <p>תל אביב, רמת גן, גבעתיים, בני ברק</p>
+                    </div>
+
+                    <div class="zone-card">
+                        <div class="zone-header">
+                            <span class="zone-name">ערים סמוכות</span>
+                            <span class="zone-price">₪35</span>
+                        </div>
+                        <p>פתח תקווה, ראשון לציון, חולון, הרצליה</p>
+                    </div>
+
+                    <div class="zone-card">
+                        <div class="zone-header">
+                            <span class="zone-name">אזורים רחוקים</span>
+                            <span class="zone-price">₪50</span>
+                        </div>
+                        <p>חיפה, ירושלים, באר שבע ועוד</p>
+                    </div>
+
+                    <div class="zone-card pickup">
+                        <div class="zone-header">
+                            <span class="zone-name">איסוף עצמי</span>
+                            <span class="zone-price free">חינם!</span>
+                        </div>
+                        <p>בתיאום מראש</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>דוקטור ג'חנון</h4>
+                    <p>הג'חנון הכי טעים בארץ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="menu.html">תפריט</a></li>
+                        <li><a href="gallery.html">גלריה</a></li>
+                        <li><a href="contact.html">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>צור קשר</h4>
+                    <p>📱 0522212410</p>
+                    <a href="https://www.instagram.com/doctorjachnun" target="_blank">📸 @doctorjachnun</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 דוקטור ג'חנון. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

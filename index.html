@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דוקטור ג'חנון - משלוחי ג'חנון</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="דוקטור ג'חנון" class="logo-img">
+                <span>דוקטור ג'חנון</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">בית</a></li>
+                <li><a href="menu.html">תפריט</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+            <a href="cart.html" class="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ד"ר ג'חנון</h1>
+            <p class="hero-tagline">שרעבי'ס</p>
+            <p class="hero-subtitle">חוויה תימנית אותנטית, בכל בית</p>
+            <p class="hero-description">הצטרפו לאלפי מכורים שלא מוכנים להתפשר, טרי ובלתי ניתן לעצירה</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">להזמנה</a>
+                <a href="https://wa.me/972522212410" class="btn btn-whatsapp" target="_blank">📱 וואטסאפ</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-mascot.jpeg" alt="דוקטור ג'חנון - המסקוט">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <span class="feature-icon">🚚</span>
+                <h3>משלוחים לכל הארץ</h3>
+                <p>מגיעים אליכם לכל מקום</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">👨‍🍳</span>
+                <h3>הכנה טרייה</h3>
+                <p>כל הזמנה מוכנה במיוחד עבורכם</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⭐</span>
+                <h3>איכות מעולה</h3>
+                <p>חומרי גלם איכותיים בלבד</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery">
+        <div class="container">
+            <h2>הצצה למטבח שלנו</h2>
+            <p class="section-subtitle">צפו בג'חנון שלנו בהכנה</p>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video controls playsinline poster="images/products/jachnun-pot.jpeg">
+                        <source src="videos/jachnun-showcase.mp4" type="video/mp4">
+                    </video>
+                    <p>ג'חנון מטורף</p>
+                </div>
+                <div class="video-card">
+                    <video controls playsinline poster="images/products/kubaneh.png">
+                        <source src="videos/fresh-baked.mp4" type="video/mp4">
+                    </video>
+                    <p>טרי מהתנור</p>
+                </div>
+                <div class="video-card">
+                    <video controls playsinline poster="images/products/lachuch.jpeg">
+                        <source src="videos/cooking.mp4" type="video/mp4">
+                    </video>
+                    <p>הכנה טרייה</p>
+                </div>
+                <div class="video-card">
+                    <video controls playsinline poster="images/products/jachnun-package.jpeg">
+                        <source src="videos/jachnun-prep.mp4" type="video/mp4">
+                    </video>
+                    <p>הכנת ג'חנון</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Items Preview -->
+    <section class="popular-section">
+        <div class="container">
+            <h2>המנות הפופולריות שלנו</h2>
+            <div class="popular-items" id="popular-items">
+                <!-- Populated by JavaScript -->
+            </div>
+            <a href="menu.html" class="btn btn-secondary">לתפריט המלא</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>דוקטור ג'חנון</h4>
+                    <p>הג'חנון הכי טעים בארץ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="menu.html">תפריט</a></li>
+                        <li><a href="gallery.html">גלריה</a></li>
+                        <li><a href="contact.html">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>צור קשר</h4>
+                    <p>📱 0522212410</p>
+                    <a href="https://www.instagram.com/doctorjachnun" target="_blank">📸 @doctorjachnun</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 דוקטור ג'חנון. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
