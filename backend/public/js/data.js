@@ -31,7 +31,7 @@ const MENU_ITEMS = [
         description: "הכירו את הקובנה מלכה - גדולה ועסיסית, הכי יפה בתימן",
         price: 70,
         category: "main",
-        image: "images/products/kubaneh.png",
+        image: "images/products/kubaneh-new.png",
         popular: true,
         badge: "המלכה"
     },
