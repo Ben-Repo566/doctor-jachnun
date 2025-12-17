@@ -96,6 +96,7 @@ const MENU_ITEMS = [
         price: 199,
         category: "deals",
         image: "images/products/jachnun-pot-new.png",
+        image2: "images/products/kubaneh-new.png",
         popular: true,
         badge: "מבצע!"
     }

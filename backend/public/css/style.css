@@ -1550,6 +1550,19 @@ img {
     transition: transform 0.3s ease;
 }
 
+/* Dual Image for Combo Deals */
+.dual-image .dual-image-wrapper {
+    display: flex;
+    gap: 4px;
+    height: 220px;
+}
+
+.dual-image .menu-item-image {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .menu-item:hover .menu-item-image {
     transform: scale(1.05);
 }

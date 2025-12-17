@@ -33,9 +33,18 @@ function renderMenuItems(category = 'all') {
 
     menuGrid.innerHTML = items.map(item => `
         <div class="menu-item ${item.popular ? 'popular' : ''}" data-category="${item.category}">
-            <div class="menu-item-image-container">
-                <img src="${item.image}" alt="${item.name}" class="menu-item-image"
-                     onerror="this.src='images/placeholder.jpg'">
+            <div class="menu-item-image-container ${item.image2 ? 'dual-image' : ''}">
+                ${item.image2 ? `
+                    <div class="dual-image-wrapper">
+                        <img src="${item.image}" alt="${item.name}" class="menu-item-image"
+                             onerror="this.src='images/placeholder.jpg'">
+                        <img src="${item.image2}" alt="${item.name}" class="menu-item-image"
+                             onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                ` : `
+                    <img src="${item.image}" alt="${item.name}" class="menu-item-image"
+                         onerror="this.src='images/placeholder.jpg'">
+                `}
                 ${item.badge ? `<span class="item-badge ${getBadgeClass(item.badge)}">${item.badge}</span>` : ''}
                 ${item.popular ? '<span class="popular-badge">פופולרי</span>' : ''}
             </div>
