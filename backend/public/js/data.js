@@ -11,7 +11,7 @@ const MENU_ITEMS = [
         description: "סיר הג'חנון המדובר - קריספי מבחוץ ורך מבפנים. מגיע עם רסק עגבניות וסחוג. ניתן להוסיף ביצים וסמנה בתוספת תשלום",
         price: 150,
         category: "main",
-        image: "images/products/jachnun-pot.jpeg",
+        image: "images/products/jachnun-pot-new.png",
         popular: true,
         badge: "המלך"
     },
