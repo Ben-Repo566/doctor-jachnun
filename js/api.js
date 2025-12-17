@@ -3,7 +3,10 @@
    Connects frontend to Node.js backend
    ===================================================== */
 
-const API_URL = 'http://localhost:3000/api';
+// API URL - update this after deploying backend to Railway
+const API_URL = window.location.hostname === 'localhost'
+    ? 'http://localhost:3000/api'
+    : 'https://your-backend.railway.app/api'; // TODO: Update with actual Railway backend URL
 
 // Store auth token
 let authToken = localStorage.getItem('authToken');
