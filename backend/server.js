@@ -21,7 +21,7 @@ app.use('/api/auth', authRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', message: 'Doctor Jachnun API is running' });
+    res.json({ status: 'ok', message: 'Doctor Jachnun API is running', version: '1.0.0' });
 });
 
 // Start server
