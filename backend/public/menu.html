@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תפריט - דוקטור ג'חנון</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="דוקטור ג'חנון" class="logo-img">
+                <span>דוקטור ג'חנון</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">בית</a></li>
+                <li><a href="menu.html" class="active">תפריט</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+            <a href="cart.html" class="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="menu-header-content">
+            <h1>התפריט שלנו</h1>
+            <p>חוויה תימנית אותנטית, בכל בית</p>
+            <p class="menu-subtitle">הצטרפו לאלפי מכורים שלא מוכנים להתפשר, טרי ובלתי ניתן לעצירה</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="category-filter" id="category-filter">
+                <!-- Populated by JavaScript -->
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart Button (Mobile) -->
+    <a href="cart.html" class="floating-cart" id="floating-cart">
+        <span class="cart-icon">🛒</span>
+        <span class="floating-cart-count" id="floating-cart-count">0</span>
+        <span class="floating-cart-total" id="floating-cart-total">₪0</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>דוקטור ג'חנון</h4>
+                    <p>חוויה תימנית אותנטית, בכל בית</p>
+                    <p>הג'חנון הכי טעים בארץ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="menu.html">תפריט</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contact.html">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>צור קשר</h4>
+                    <p>📱 0522212410</p>
+                    <a href="https://www.instagram.com/doctorjachnun" target="_blank">📸 @doctorjachnun</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 דוקטור ג'חנון. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

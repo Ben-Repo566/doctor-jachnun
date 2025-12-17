@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>השלמת הזמנה - דוקטור ג'חנון</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="דוקטור ג'חנון" class="logo-img">
+                <span>דוקטור ג'חנון</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">בית</a></li>
+                <li><a href="menu.html">תפריט</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+            <a href="cart.html" class="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Checkout Header -->
+    <section class="page-header">
+        <h1>השלמת הזמנה</h1>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-grid">
+                <!-- Checkout Form -->
+                <div class="checkout-form-container">
+                    <form id="checkout-form" class="checkout-form">
+                        <h3>פרטי משלוח</h3>
+
+                        <div class="form-group">
+                            <label for="name">שם מלא *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">טלפון *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="05X-XXXXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">אימייל</label>
+                            <input type="email" id="email" name="email" placeholder="לקבלת אישור הזמנה">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zone">אזור משלוח *</label>
+                            <select id="zone" name="zone" required>
+                                <option value="">בחר אזור</option>
+                                <option value="pickup">איסוף עצמי - חינם</option>
+                                <option value="zone1">אזור מרכז - ₪20</option>
+                                <option value="zone2">ערים סמוכות - ₪35</option>
+                                <option value="zone3">אזורים רחוקים - ₪50</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="address-group">
+                            <label for="address">כתובת מלאה *</label>
+                            <input type="text" id="address" name="address" placeholder="רחוב, מספר בית, עיר">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">הערות להזמנה</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="בקשות מיוחדות, הוראות הגעה..."></textarea>
+                        </div>
+
+                        <h3>אמצעי תשלום</h3>
+                        <p class="payment-note">התשלום יתבצע לאחר אישור ההזמנה באמצעות Bit או PayBox</p>
+
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="bit" checked>
+                                <span class="payment-label">Bit</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="paybox">
+                                <span class="payment-label">PayBox</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-order">
+                            שלח הזמנה
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h3>סיכום הזמנה</h3>
+                    <div class="summary-items" id="summary-items">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                    <div class="summary-totals">
+                        <div class="summary-row">
+                            <span>סה"כ מוצרים:</span>
+                            <span id="checkout-subtotal">₪0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>משלוח:</span>
+                            <span id="checkout-delivery">₪0</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>סה"כ לתשלום:</span>
+                            <span id="checkout-total">₪0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 דוקטור ג'חנון. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנות - ניהול דוקטור ג'חנון</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logo.png" alt="דוקטור ג'חנון" class="sidebar-logo">
+            <h2>דוקטור ג'חנון</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">📊</span>
+                <span>לוח בקרה</span>
+            </a>
+            <a href="orders.html" class="nav-item active">
+                <span class="nav-icon">📦</span>
+                <span>הזמנות</span>
+                <span class="badge" id="pending-count">0</span>
+            </a>
+            <a href="customers.html" class="nav-item">
+                <span class="nav-icon">👥</span>
+                <span>לקוחות</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="../index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>לאתר</span>
+            </a>
+            <button class="nav-item logout-btn" id="logout-btn">
+                <span class="nav-icon">🚪</span>
+                <span>התנתק</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <header class="admin-header">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <h1>ניהול הזמנות</h1>
+            <div class="admin-user">
+                <span id="admin-email">admin@example.com</span>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <!-- Filters -->
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <label>סטטוס:</label>
+                    <select id="status-filter">
+                        <option value="all">הכל</option>
+                        <option value="pending">ממתין לאישור</option>
+                        <option value="confirmed">אושר</option>
+                        <option value="completed">הושלם</option>
+                        <option value="cancelled">בוטל</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>תאריך:</label>
+                    <input type="date" id="date-filter">
+                </div>
+                <button class="btn btn-secondary" id="refresh-btn">🔄 רענן</button>
+            </div>
+
+            <!-- Orders Table -->
+            <div class="orders-table-container">
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>מספר הזמנה</th>
+                            <th>תאריך</th>
+                            <th>לקוח</th>
+                            <th>טלפון</th>
+                            <th>אזור</th>
+                            <th>סכום</th>
+                            <th>סטטוס</th>
+                            <th>פעולות</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-list">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <span class="empty-icon">📦</span>
+                <h3>אין הזמנות</h3>
+                <p>לא נמצאו הזמנות בסינון הנוכחי</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Order Detail Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>פרטי הזמנה <span id="modal-order-id"></span></h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Populated by JavaScript -->
+            </div>
+            <div class="modal-footer" id="modal-footer">
+                <!-- Action buttons populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/admin/auth.js"></script>
+    <script src="../js/admin/orders.js"></script>
+</body>
+</html>

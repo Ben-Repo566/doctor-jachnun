@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 const { testConnection } = require('./config/database');
@@ -14,6 +15,9 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 // API Routes
 app.use('/api/orders', ordersRoutes);
 app.use('/api/customers', customersRoutes);
@@ -22,6 +26,13 @@ app.use('/api/auth', authRoutes);
 // Health check
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', message: 'Doctor Jachnun API is running', version: '1.0.0' });
+});
+
+// Serve index.html for all non-API routes (SPA support)
+app.get('*', (req, res) => {
+    if (!req.path.startsWith('/api')) {
+        res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    }
 });
 
 // Start server

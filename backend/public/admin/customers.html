@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לקוחות - ניהול דוקטור ג'חנון</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logo.png" alt="דוקטור ג'חנון" class="sidebar-logo">
+            <h2>דוקטור ג'חנון</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">📊</span>
+                <span>לוח בקרה</span>
+            </a>
+            <a href="orders.html" class="nav-item">
+                <span class="nav-icon">📦</span>
+                <span>הזמנות</span>
+                <span class="badge" id="pending-count">0</span>
+            </a>
+            <a href="customers.html" class="nav-item active">
+                <span class="nav-icon">👥</span>
+                <span>לקוחות</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="../index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>לאתר</span>
+            </a>
+            <button class="nav-item logout-btn" id="logout-btn">
+                <span class="nav-icon">🚪</span>
+                <span>התנתק</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <header class="admin-header">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <h1>ניהול לקוחות</h1>
+            <div class="admin-user">
+                <span id="admin-email">admin@example.com</span>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <!-- Search -->
+            <div class="filters-bar">
+                <div class="search-group">
+                    <input type="text" id="search-input" placeholder="חיפוש לפי שם או טלפון...">
+                </div>
+                <button class="btn btn-secondary" id="refresh-btn">🔄 רענן</button>
+            </div>
+
+            <!-- Customers Table -->
+            <div class="orders-table-container">
+                <table class="orders-table customers-table">
+                    <thead>
+                        <tr>
+                            <th>שם</th>
+                            <th>טלפון</th>
+                            <th>אימייל</th>
+                            <th>הזמנות</th>
+                            <th>סה"כ קניות</th>
+                            <th>הזמנה אחרונה</th>
+                            <th>פעולות</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customers-list">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <span class="empty-icon">👥</span>
+                <h3>אין לקוחות</h3>
+                <p>עדיין לא נרשמו לקוחות במערכת</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Customer Detail Modal -->
+    <div class="modal" id="customer-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>פרטי לקוח</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/admin/auth.js"></script>
+    <script src="../js/admin/customers.js"></script>
+</body>
+</html>
