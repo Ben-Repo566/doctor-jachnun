@@ -95,7 +95,7 @@ const MENU_ITEMS = [
         description: "מבצע מיוחד! סיר ג'חנון + סיר קובנה במחיר מיוחד. היה 230 ש\"ח!",
         price: 199,
         category: "deals",
-        image: "images/products/jachnun-pot.jpeg",
+        image: "images/products/jachnun-pot-new.png",
         popular: true,
         badge: "מבצע!"
     }
