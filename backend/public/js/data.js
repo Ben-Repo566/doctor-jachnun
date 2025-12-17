@@ -122,7 +122,7 @@ const DELIVERY_ZONES = {
 // Business info
 const BUSINESS_INFO = {
     name: "דוקטור ג'חנון",
-    slogan: "חוויה תימנית אותנטית, בכל בית",
+    slogan: "הג'חנון היחידי שרך מבפנים וקריספי מבחוץ",
     phone: "0522212410",
     whatsapp: "972522212410",
     instagram: "doctorjachnun",
