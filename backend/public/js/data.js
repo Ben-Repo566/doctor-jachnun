@@ -39,40 +39,12 @@ const MENU_ITEMS = [
     // Lachuch
     {
         id: 4,
-        name: "לחוח - יחידה",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
+        name: "לחוח",
+        description: "הלחוח שלנו הכי טרי אווירירי וטעים - 6 ש\"ח ליחידה",
         price: 6,
         category: "lachuch",
         image: "images/products/lachuch.jpeg",
-        popular: false
-    },
-    {
-        id: 5,
-        name: "לחוח - 2 יחידות",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
-        price: 10,
-        category: "lachuch",
-        image: "images/products/lachuch.jpeg",
-        popular: false
-    },
-    {
-        id: 6,
-        name: "לחוח - 3 יחידות",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
-        price: 15,
-        category: "lachuch",
-        image: "images/products/lachuch.jpeg",
-        popular: false
-    },
-    {
-        id: 7,
-        name: "לחוח - 4 יחידות",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
-        price: 20,
-        category: "lachuch",
-        image: "images/products/lachuch.jpeg",
-        popular: true,
-        badge: "משתלם"
+        popular: true
     },
 
     // Malawach
