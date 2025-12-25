@@ -39,45 +39,17 @@ const MENU_ITEMS = [
     // Lachuch
     {
         id: 4,
-        name: "לחוח - יחידה",
+        name: "לחוח",
         description: "הלחוח שלנו הכי טרי אווירירי וטעים",
         price: 6,
         category: "lachuch",
         image: "images/products/lachuch.jpeg",
         popular: false
     },
-    {
-        id: 5,
-        name: "לחוח - 2 יחידות",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
-        price: 10,
-        category: "lachuch",
-        image: "images/products/lachuch.jpeg",
-        popular: false
-    },
-    {
-        id: 6,
-        name: "לחוח - 3 יחידות",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
-        price: 15,
-        category: "lachuch",
-        image: "images/products/lachuch.jpeg",
-        popular: false
-    },
-    {
-        id: 7,
-        name: "לחוח - 4 יחידות",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
-        price: 20,
-        category: "lachuch",
-        image: "images/products/lachuch.jpeg",
-        popular: true,
-        badge: "משתלם"
-    },
 
     // Malawach
     {
-        id: 8,
+        id: 5,
         name: "מלאווח קריספי",
         description: "המלאווח הכי קריספי בעולם - קנה 10 קבל 2 במתנה!",
         price: 10,
@@ -89,7 +61,7 @@ const MENU_ITEMS = [
 
     // Sauces & Extras
     {
-        id: 9,
+        id: 6,
         name: "סחוג צנצנת",
         description: "סחוג ביתי חריף ומיוחד בצנצנת עם פקק שעם",
         price: 25,
@@ -98,7 +70,7 @@ const MENU_ITEMS = [
         popular: true
     },
     {
-        id: 10,
+        id: 7,
         name: "סמנה צנצנת",
         description: "חמאה מזוקקת עם זרעי חילבה - איכותית לג'חנון מושלם",
         price: 40,
@@ -107,7 +79,7 @@ const MENU_ITEMS = [
         popular: true
     },
     {
-        id: 11,
+        id: 8,
         name: "רסק עגבניות חצי ק\"ג",
         description: "רסק עגבניות ביתי טרי - חצי קילו",
         price: 10,
@@ -118,7 +90,7 @@ const MENU_ITEMS = [
 
     // Special Deals
     {
-        id: 12,
+        id: 9,
         name: "מבצע חורף - סיר ג'חנון + קובנה",
         description: "מבצע מיוחד! סיר ג'חנון + סיר קובנה במחיר מיוחד. היה 230 ש\"ח!",
         price: 199,
