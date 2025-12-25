@@ -103,7 +103,7 @@ const MENU_ITEMS = [
         description: "חמאה מזוקקת עם זרעי חילבה - איכותית לג'חנון מושלם",
         price: 40,
         category: "extras",
-        image: "images/products/samneh.jpeg",
+        image: "images/products/samneh-new.jpeg",
         popular: true
     },
     {
