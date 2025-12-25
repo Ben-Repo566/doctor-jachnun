@@ -11,7 +11,7 @@ const MENU_ITEMS = [
         description: "סיר הג'חנון המדובר - קריספי מבחוץ ורך מבפנים. מגיע עם רסק עגבניות וסחוג. ניתן להוסיף ביצים וסמנה בתוספת תשלום",
         price: 150,
         category: "main",
-        image: "images/products/jachnun-pot-new.png",
+        image: "images/products/jachnun-pot.jpeg",
         popular: true,
         badge: "המלך"
     },
@@ -31,7 +31,7 @@ const MENU_ITEMS = [
         description: "הכירו את הקובנה מלכה - גדולה ועסיסית, הכי יפה בתימן",
         price: 70,
         category: "main",
-        image: "images/products/kubaneh-new.png",
+        image: "images/products/kubaneh.png",
         popular: true,
         badge: "המלכה"
     },
@@ -39,12 +39,40 @@ const MENU_ITEMS = [
     // Lachuch
     {
         id: 4,
-        name: "לחוח",
-        description: "הלחוח שלנו הכי טרי אווירירי וטעים - 6 ש\"ח ליחידה",
+        name: "לחוח - יחידה",
+        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
         price: 6,
         category: "lachuch",
         image: "images/products/lachuch.jpeg",
-        popular: true
+        popular: false
+    },
+    {
+        id: 5,
+        name: "לחוח - 2 יחידות",
+        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
+        price: 10,
+        category: "lachuch",
+        image: "images/products/lachuch.jpeg",
+        popular: false
+    },
+    {
+        id: 6,
+        name: "לחוח - 3 יחידות",
+        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
+        price: 15,
+        category: "lachuch",
+        image: "images/products/lachuch.jpeg",
+        popular: false
+    },
+    {
+        id: 7,
+        name: "לחוח - 4 יחידות",
+        description: "הלחוח שלנו הכי טרי אווירירי וטעים",
+        price: 20,
+        category: "lachuch",
+        image: "images/products/lachuch.jpeg",
+        popular: true,
+        badge: "משתלם"
     },
 
     // Malawach
@@ -72,10 +100,10 @@ const MENU_ITEMS = [
     {
         id: 10,
         name: "סמנה צנצנת",
-        description: "סמנה (חמאה מזוקקת) איכותית לג'חנון מושלם",
+        description: "חמאה מזוקקת עם זרעי חילבה - איכותית לג'חנון מושלם",
         price: 40,
         category: "extras",
-        image: "images/products/samneh.jpeg",
+        image: "images/products/samneh-v2.jpeg",
         popular: true
     },
     {
@@ -95,8 +123,7 @@ const MENU_ITEMS = [
         description: "מבצע מיוחד! סיר ג'חנון + סיר קובנה במחיר מיוחד. היה 230 ש\"ח!",
         price: 199,
         category: "deals",
-        image: "images/products/jachnun-pot-new.png",
-        image2: "images/products/kubaneh-new.png",
+        image: "images/products/jachnun-pot.jpeg",
         popular: true,
         badge: "מבצע!"
     }
@@ -123,7 +150,7 @@ const DELIVERY_ZONES = {
 // Business info
 const BUSINESS_INFO = {
     name: "דוקטור ג'חנון",
-    slogan: "הג'חנון היחידי שרך מבפנים וקריספי מבחוץ",
+    slogan: "חוויה תימנית אותנטית, בכל בית",
     phone: "0522212410",
     whatsapp: "972522212410",
     instagram: "doctorjachnun",
