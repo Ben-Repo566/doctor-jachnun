@@ -1464,6 +1464,19 @@ img {
     font-size: 0.875rem;
 }
 
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* =====================================================
    Menu Header (Enhanced)
    ===================================================== */

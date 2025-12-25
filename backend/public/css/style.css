@@ -125,10 +125,10 @@ img {
 }
 
 .logo-img {
-    width: 50px;
-    height: 50px;
-    border-radius: var(--radius-md);
-    object-fit: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
 }
 
 .nav-links {
@@ -486,13 +486,41 @@ img {
     background: var(--white);
 }
 
-/* Video Play Overlay - Hidden */
+/* Video Play Overlay */
 .play-overlay {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.video-item:hover .play-overlay {
+    background: rgba(0,0,0,0.5);
 }
 
 .play-button {
-    display: none;
+    width: 70px;
+    height: 70px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--secondary);
+    transition: all 0.3s ease;
+    padding-right: 5px;
+}
+
+.video-item:hover .play-button {
+    transform: scale(1.1);
+    background: var(--white);
 }
 
 /* Modal Styles */
@@ -1436,6 +1464,19 @@ img {
     font-size: 0.875rem;
 }
 
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* =====================================================
    Menu Header (Enhanced)
    ===================================================== */
@@ -1545,22 +1586,8 @@ img {
 .menu-item-image {
     width: 100%;
     height: 220px;
-    object-fit: contain;
-    background: var(--gray-100);
+    object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-/* Dual Image for Combo Deals */
-.dual-image .dual-image-wrapper {
-    display: flex;
-    gap: 4px;
-    height: 220px;
-}
-
-.dual-image .menu-item-image {
-    width: 50%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .menu-item:hover .menu-item-image {
