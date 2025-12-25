@@ -100,7 +100,7 @@ const MENU_ITEMS = [
     {
         id: 10,
         name: "סמנה צנצנת",
-        description: "סמנה (חמאה מזוקקת) איכותית לג'חנון מושלם",
+        description: "חמאה מזוקקת עם זרעי חילבה - איכותית לג'חנון מושלם",
         price: 40,
         category: "extras",
         image: "images/products/samneh.jpeg",
